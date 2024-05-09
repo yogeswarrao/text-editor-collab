@@ -11,7 +11,7 @@ export const initSocket = async () => {
             timeout: 10000,
             transports: ['websocket'],
         };
-        socketInstance = io(process.env.REACT_APP_BACKEND_URL, options);
+        socketInstance = io("https://text-editor-collab-ecs0.onrender.com", options);
     }
     return socketInstance;
 };
